@@ -1,0 +1,58 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "TS API",
+        "description": "Description of API for TS module ",
+        "contact": {
+            "email": "starinasergey@gmail.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/language/get-list": {
+            "get": {
+                "tags": [
+                    "Language"
+                ],
+                "summary": "Get list language",
+                "description": "Get list language",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/study/get-list": {
+            "get": {
+                "tags": [
+                    "Study"
+                ],
+                "summary": "Test get info without DB",
+                "description": "Test get info without DB",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}
